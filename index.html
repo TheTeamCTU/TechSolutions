@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions Inc. | Software Development & IT Consulting</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, purple, darkblue);
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            margin: 20px auto;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            padding-right: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .hero {
+            padding: 50px;
+        }
+        .hero h1{
+            font-size: 50px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.9s;
+        }
+        .btn:hover {
+            background: rgb(196, 14, 141);
+            color: white;
+            font-style: italic;
+            box-shadow: 2px 2px 2px 2px;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TechSolutions Inc.</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Innovative Software Solutions for <span style="color: rgb(255, 8, 181);">Modern</span> Businesses</h1>
+        <h2 style="font-style: italic;"><span style="color: rgb(255, 8, 181);">Empowering businesses</span> with custom software and <span style="color: rgb(255, 8, 181);">IT</span> consulting expertise.</h2>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>TechSolutions Inc. is a cutting-edge software development company <br> that specializes in IT consulting and custom software solutions. <br> Our team of experts delivers innovative solutions tailored to your business needs.</p>
+    </section>
+    
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Custom Software Development</li>
+            <li>Cloud Solutions & Integration</li>
+            <li>IT Consulting & Strategy</li>
+            <li>Cybersecurity & Compliance</li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us to discuss your software and IT needs.</p>
+        <a href="mailto:info@techsolutions.com" class="btn">Email Us</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 TechSolutions Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
