@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(90deg, #a133ff, #3366ff);
+            color: white;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .navbar ul li a.active {
+            text-decoration: underline;
+        }
+        .auth-buttons button {
+            background-color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .service-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .service-card {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #a133ff, #3366ff);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+        }
+        .service-image img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .service-info {
+            flex-grow: 1;
+        }
+        .btn {
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .get-started {
+            background-color: #ff33aa;
+            color: white;
+        }
+        .learn-more {
+            background-color: white;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-up">Sign up</button>
+            <button class="sign-in">Sign in</button>
+        </div>
+    </nav>
+    
+    <h2 class="section-title">Services We Offer</h2>
+    
+    <div class="service-container">
+        <div class="service-card">
+            <div class="service-image">
+                <img src="img-ser2.jpg" alt="Tech Consultants">
+            </div>
+            <div class="service-info">
+                <h3>Tech Consultants</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.</p>
+                <button class="btn get-started">Get Started →</button>
+                <button class="btn learn-more">Learn more</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-image">
+                <img src="img-ser1.jpg" alt="IT Support">
+            </div>
+            <div class="service-info">
+                <h3>IT Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.</p>
+                <button class="btn get-started">Get Started →</button>
+                <button class="btn learn-more">Learn more</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
