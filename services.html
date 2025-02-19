@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, purple, darkblue);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px; /* Prevents content from being hidden under the fixed header */
+            min-height: 100vh;
         }
         header {
             position: fixed;
@@ -53,19 +59,21 @@
         }
         .section-title {
             text-align: center;
-            margin: 100px 0 30px;
+            margin-bottom: 30px;
         }
         .service-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
             padding: 20px;
+            width: 100%;
         }
         .service-card {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            background: linear-gradient(90deg, #a133ff, #3366ff);
+            background: linear-gradient(90deg, #ff33a3, #156686);
             color: white;
             padding: 20px;
             border-radius: 10px;
@@ -73,15 +81,8 @@
             max-width: 600px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .service-image img {
-            width: 150px;
-            height: 100px;
-            margin-right: 20px;
-            border-radius: 5px;
-            object-fit: cover;
-        }
         .service-info {
-            flex-grow: 1;
+            text-align: center;
         }
         .btn {
             padding: 10px 15px;
@@ -101,7 +102,9 @@
     </style>
 </head>
 <body>
+
     <header>
+        <!-- nav bar is work and take you to correct page -->
         <div class="logo">TechSolutions Inc.</div>
         <nav>
             <ul>
@@ -111,32 +114,39 @@
             </ul>
         </nav>
     </header>
-    
+    <!-- this add the cards the the content the the page -->
     <h2 class="section-title">Services We Offer</h2>
-    
+
     <div class="service-container">
         <div class="service-card">
-            <div class="service-image">
-                <img src="images/img2.jpg" alt="Tech Consultants">
-            </div>
             <div class="service-info">
-                <h3>Tech Consultants</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.</p>
-                <button class="btn get-started">Get Started →</button>
+                <h3>Tech Consulting</h3>
+                <p>We provide expert guidance to help businesses implement the latest technology, optimize workflows, and enhance efficiency.</p>
+                <button class="btn get-started">Get Started →</button><!-- this buttens does nothing -->
                 <button class="btn learn-more">Learn more</button>
             </div>
         </div>
+        
         <div class="service-card">
-            <div class="service-image">
-                <img src="images/img1.jpg" alt="IT Support">
-            </div>
             <div class="service-info">
                 <h3>IT Support</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis.</p>
-                <button class="btn get-started">Get Started →</button>
+                <p>Our team offers round-the-clock IT support, troubleshooting, and maintenance to keep your systems running smoothly.</p>
+                <button class="btn get-started">Get Started →</button><!-- this buttens does nothing -->
+                <button class="btn learn-more">Learn more</button>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-info">
+                <h3>Cybersecurity</h3>
+                <p>Protect your business from cyber threats with our advanced security solutions, risk assessments, and threat mitigation strategies.</p>
+                <button class="btn get-started">Get Started →</button><!-- this buttens does nothing -->
                 <button class="btn learn-more">Learn more</button>
             </div>
         </div>
     </div>
+
 </body>
 </html>
+
+
