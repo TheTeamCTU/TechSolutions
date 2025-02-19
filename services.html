@@ -12,46 +12,48 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        .navbar {
+        header {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 30px;
-            background: linear-gradient(90deg, #a133ff, #3366ff);
-            color: white;
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            z-index: 1000;
         }
         .logo {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
+            color: white;
         }
-        .navbar ul {
+        nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
             display: flex;
+            gap: 20px;
         }
-        .navbar ul li {
-            margin: 0 15px;
-        }
-        .navbar ul li a {
-            text-decoration: none;
+        nav a {
             color: white;
+            text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: background 0.3s;
         }
-        .navbar ul li a.active {
-            text-decoration: underline;
-        }
-        .auth-buttons button {
-            background-color: white;
-            border: none;
-            padding: 8px 15px;
-            margin-left: 10px;
-            cursor: pointer;
-            border-radius: 5px;
+        nav a:hover {
+            background: linear-gradient(135deg, rgb(194, 3, 194), rgb(3, 3, 204));
+            color: aliceblue;
         }
         .section-title {
             text-align: center;
-            margin: 30px 0;
+            margin: 100px 0 30px;
         }
         .service-container {
             display: flex;
@@ -99,24 +101,23 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-           
-            <li><a href="#">Services</a></li>
-           
-            <li><a href="#">Contact</a></li>
-        </ul>
-       
-    </nav>
+    <header>
+        <div class="logo">TechSolutions Inc.</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <h2 class="section-title">Services We Offer</h2>
     
     <div class="service-container">
         <div class="service-card">
             <div class="service-image">
-                <img src="img2.jpg" alt="Tech Consultants">
+                <img src="images/img2.jpg" alt="Tech Consultants">
             </div>
             <div class="service-info">
                 <h3>Tech Consultants</h3>
@@ -127,7 +128,7 @@
         </div>
         <div class="service-card">
             <div class="service-image">
-                <img src="img1.jpg" alt="IT Support">
+                <img src="images/img1.jpg" alt="IT Support">
             </div>
             <div class="service-info">
                 <h3>IT Support</h3>
