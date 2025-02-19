@@ -15,12 +15,55 @@
                 padding: 0;
             }
 
+            header {
+                position: absolute;
+                top: 0;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.4);
+                border-radius: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+                margin: 20px auto;
+                z-index: 10;
+            }
+
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+                padding-left: 15px;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 20px;
+                padding-right: 15px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 10px 15px;
+                border-radius: 10px;
+                transition: background 0.3s;
+            }
+
+            nav a:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
+
             .main-info {
                 display: flex;
-                flex-direction: column;
+                flex-direction: column;  /* Stack elements vertically */
                 justify-content: left;
                 width: 40%;
                 padding: 20px;
+                margin-top: 120px;
             }
 
             .form-info {
@@ -29,18 +72,45 @@
                 justify-content: left;
                 width: 40%;
                 padding: 20px;
+                margin-top: 120px;
             }
 
-            /* Optional: Style for better spacing */
             label, input, textarea {
                 margin-bottom: 10px;
+            }
+
+            input, textarea, button {
+                border-radius: 5px;
+            }
+
+            button:hover {
+                background-color: rgb(0, 132, 255);
+            }
+
+            .contact-details p {
+                margin: 5px 0;
             }
         </style>
     </head>
     <body>
+        <header>
+            <div class="logo">TechSolutions Inc.</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <div class="main-info">
             <h1>Contact</h1>
-            <p>If you have any questions or requests, please use this page to contact us.</p>
+            <div class="contact-details">
+                <p><b>Call:</b> +27 067 007 1288</p>
+                <p><b>Email:</b> TechSolutions@gmail.com</p>
+                <p><b>Address:</b> 788 John ST Water Town</p>
+            </div>
         </div>
 
         <div class="form-info">
