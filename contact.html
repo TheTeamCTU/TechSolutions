@@ -21,29 +21,20 @@
 
         <script>
             function validateForm(event) {
-                event.preventDefault(); // Prevent form submission for validation
+                event.preventDefault();
+
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let message = document.getElementById('message').value;
     
-                // Get the values of the input fields
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-    
-                // Get the error message element
-                const errorMessage = document.getElementById('error-message');
-                const successMessage = document.getElementById('success-message');
-    
-                // Clear previous messages
-                errorMessage.textContent = '';
-                successMessage.textContent = '';
-    
-                // Validate the form fields
-                if (!name || !email || !message) {
-                    errorMessage.textContent = 'Please fill in all fields!';
+                if (name == '' || email == '' || message == '') {
+                    alert('Please fill in all fields!');
                 } else {
-                    successMessage.textContent = 'Your message has been sent successfully!';
+                    alert('Your message has been sent successfully!');
                 }
             }
         </script>
+    
 
     </head>
     <body>
@@ -53,7 +44,7 @@
         </div>
 
         <div class="form-info">
-            <form action="#" method="POST">
+            <form id="contactForm" onsubmit="validateForm(event)">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
         
