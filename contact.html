@@ -6,8 +6,13 @@
         <title>Contact Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <!-- CSS code to style the website -->
         <style>
+            html, body {
+                height: 100%;  
+            }
+            
             body {
                 display: flex;
                 justify-content: space-between;
@@ -15,7 +20,10 @@
                 margin: 0;
                 background: linear-gradient(135deg, purple, darkblue);
                 backdrop-filter: blur(10px);
+                background-size: cover;  
+                background-repeat: no-repeat; 
             }
+            
 
             header {
                 position: absolute;
@@ -57,7 +65,7 @@
 
             .main-info {
                 display: flex;
-                flex-direction: column;  /* Stack elements vertically */
+                flex-direction: column;  
                 justify-content: left;
                 width: 40%;
                 padding: 20px;
@@ -127,8 +135,31 @@
                 border-radius: 10px 10px 10px 10px;
             }
         </style>
+
+        <script>
+            function validateForm(event) {
+                event.preventDefault();
+
+                // Get the values of the input fields
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let message = document.getElementById('message').value;
+
+                // Check if any of the fields are empty
+                if (name == '' || email == '' || message == '') {
+                    alert('Please fill in all fields!');
+                } else {
+                    alert('Your message has been sent successfully!\n\n' +
+                          'Name: ' + name + '\n' +
+                          'Email: ' + email + '\n' +
+                          'Message: ' + message);
+                }
+            }
+        </script>
+        
     </head>
     <body>
+        <!-- Navigation bar for navigating between pages -->
         <header>
             <div class="logo">TechSolutions Inc.</div>
             <nav>
@@ -140,6 +171,7 @@
             </nav>
         </header>
 
+        <!-- Information of the website -->
         <div class="main-info">
             <h1>Contact</h1>
             <div class="contact-details">
@@ -149,7 +181,9 @@
             </div>
         </div>
 
+        <!-- User information -->
         <div class="form-info">
+            <!-- Form to collect user information -->
             <form id="contactForm" onsubmit="validateForm(event)">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
