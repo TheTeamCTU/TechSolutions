@@ -8,34 +8,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .main-info{
+            body {
                 display: flex;
-                justify-content: left;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
             }
 
-            .form-info{
+            .main-info {
                 display: flex;
-                justify-content: right;
+                flex-direction: column;
+                justify-content: left;
+                width: 40%;
+                padding: 20px;
+            }
+
+            .form-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                width: 40%;
+                padding: 20px;
+            }
+
+            /* Optional: Style for better spacing */
+            label, input, textarea {
+                margin-bottom: 10px;
             }
         </style>
-
-        <script>
-            function validateForm(event) {
-                event.preventDefault();
-
-                let name = document.getElementById('name').value;
-                let email = document.getElementById('email').value;
-                let message = document.getElementById('message').value;
-    
-                if (name == '' || email == '' || message == '') {
-                    alert('Please fill in all fields!');
-                } else {
-                    alert('Your message has been sent successfully!');
-                }
-            }
-        </script>
-    
-
     </head>
     <body>
         <div class="main-info">
