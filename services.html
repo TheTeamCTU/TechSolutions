@@ -90,6 +90,7 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            transition: transform 0.1s ease; /* Add transition for hover effect */
         }
         .get-started {
             background-color: #ff33aa;
@@ -98,6 +99,9 @@
         .learn-more {
             background-color: white;
             color: #333;
+        }
+        .btn:hover {
+            transform: scale(1.05); /* Make the button slightly bigger on hover */
         }
     </style>
 </head>
@@ -145,8 +149,6 @@
             </div>
         </div>
     </div>
-
+ 
 </body>
 </html>
-
-
